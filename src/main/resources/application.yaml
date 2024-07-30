@@ -4,10 +4,10 @@ server:
         context-path: /hotel
 spring:
     datasource:
-        url: "jdbc:mysql://localhost:3306/hotel_manager"
+        url: ${DBMS_CONNECTION}
         driverClassName: "com.mysql.cj.jdbc.Driver"
-        username: "root"
-        password: "nqluong"
+        username: ${DBMS_USERNAME}
+        password: ${DBMS_PASSWORD}
     jpa:
         hibernate:
           ddl-auto: update
